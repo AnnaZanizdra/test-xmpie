@@ -1,0 +1,11 @@
+.search-block {
+    position: absolute;
+    top: 400px;
+    height: 100px;
+    border:  solid 1px #000;
+    transition: top 3s;
+}
+
+.search-block.active {
+    top: 0px;
+}
