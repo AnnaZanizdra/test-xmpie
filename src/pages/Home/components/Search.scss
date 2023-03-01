@@ -1,11 +1,27 @@
 .search-block {
+    display: flex;
     position: absolute;
+    width: 85%;
     top: 400px;
-    height: 100px;
-    border:  solid 1px #000;
-    transition: top 3s;
+    height: 30px;
+    transition: top 1s;
 }
 
 .search-block.active {
-    top: 0px;
+    top: 20px;
+}
+.search-btn {
+    height: 30px;
+    width: 50px;
+    margin: 0px 8px;
+    cursor: pointer;
+    background: #58babc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAMAAABFjsb+AAAAAXNSR0IB2cksfwAAAKJQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////BC52ggAAADZ0Uk5TAANatuv97bleBSTN/+yumKzq0ino9G0GZvIqODLx1WJk5MGj9QGNCKL2AuLDXGkr7tqqnJnbKaqgwwAAALdJREFUeJx1jtkSgjAMRcMiiAZlEYsKIrsUcEP//9eUAgWdsS8nc5ImFwBAECV5pqhzDfhbLFFfrQ0TLZurjbMlH2ruTtl3Slg6h77r+UfCChG3fEuAJ0ZJJ9wJYcQor8ZrECdpi9l64jLMWyjGxJ0LNqeaY1RaVoxzdLmr8cKoWTuvV9fbPe8qW/EDof1Y3/BB+/b+iGGcnUu8P7AZJDlFCRbVJafNKAHSnIX4lkOaP/L564A+X28nKw8AX4nBewAAAABJRU5ErkJggg==) 50%/19px no-repeat;
+}
+
+.favorite-btn {
+    height: 30px;
+    width: 150px;
+    background-color: #eb460f;
+    margin: 0px 8px;
+    cursor: pointer;
 }

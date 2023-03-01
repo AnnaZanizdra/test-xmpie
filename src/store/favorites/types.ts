@@ -1,4 +1,3 @@
-export type ImagesState = {
-    searchString: string;
+export type FavoritesState = {
     list: any[];
 };

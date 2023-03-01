@@ -1,13 +1,11 @@
 import React from "react";
-import axios from "axios";
-import { PIXABAY_KEY } from "../constants";
+import { get } from "../../services/HttpService";
+import { PIXABAY_KEY } from "../../constants";
 
-export const getImagesByQuery = async(query: React.ReactText) =>
-    axios.get("https://pixabay.com/api/", {
+export const getImagesByQuery = (query: React.ReactText) =>
+    get("", {
         params: {
             key: PIXABAY_KEY,
             'q': query,
         }
-    }).then(function (response) {
-        return response.data;
     });
