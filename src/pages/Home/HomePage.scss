@@ -20,3 +20,10 @@
     margin-right: auto;
   }
 }
+.ReactGridGallery_tile-icon-bar {
+  bottom: 0px;
+}
+
+div[data-testid] {
+  float: right !important;
+}

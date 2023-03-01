@@ -3,8 +3,10 @@ import { PageType } from "../types";
 import "./FavoritesPage.scss";
 import { Tooltip } from "antd";
 import { UseLocalStorage } from "../../hooks/UseLocalStorage";
+import { useNavigate } from "react-router-dom";
 
 const FavoritesPage: PageType = () => {
+    const navigate = useNavigate();
     const favoritesData = localStorage.getItem('favorites');
     const favorites = favoritesData ? JSON.parse(favoritesData) : [];
     const [active, setActive] = React.useState<boolean>(true);
@@ -19,6 +21,9 @@ const FavoritesPage: PageType = () => {
     return (
         <div className="favorite-page">
             <div className="container">
+                <button type="button" className="home-btn" onClick={() => navigate("/")}>
+                    Home page
+                </button>
                 <h1>Favorite images</h1>
                 <div className="favorite-page__content">
                     {favorites.map((image: any) => {
